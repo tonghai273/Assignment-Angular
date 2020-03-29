@@ -9,7 +9,6 @@ import { ProductAddComponent } from "./product-add/product-add.component";
 import { ProductEditComponent } from "./product-edit/product-edit.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { IndexAdminComponent } from "./index-admin/index-admin.component";
-import { DashboardComponent } from "./dashboard/dashboard.component";
 const routes: Routes = [
   {
     path: "add",
@@ -24,7 +23,6 @@ const routes: Routes = [
     component: IndexAdminComponent,
     children: [
       { path: "", redirectTo: "product", pathMatch: "full" },
-      { path: "dashboard", component: DashboardComponent },
       { path: "product", component: ProductManegerComponent },
       { path: "addproduct", component: ProductAddComponent },
       { path: "product/edit/:productID", component: ProductEditComponent }
