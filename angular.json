@@ -23,7 +23,24 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/checkout.css",
+              "src/assets/css/contact.css",
+              "src/assets/css/creditly.css",
+              "src/assets/css/easy-responsive-tabs.css",
+              "src/assets/css/flexslider.css",
+              "src/assets/css/fontawesome-all.css",
+              "src/assets/css/jquery-ui1.css",
+              "src/assets/css/login_overlay.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/owl.theme.css",
+              "src/assets/css/shop.css",
+              "src/assets/css/simplyCountdown.css",
+              "src/assets/css/style.css",
+              "src/assets/css/style6.css",
+              "src/assets/css/sb-admin-2.min.css",
+              "src/assets/css/sb-admin-2"
             ],
             "scripts": []
           },
