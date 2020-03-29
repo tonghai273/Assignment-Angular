@@ -23,6 +23,8 @@ export class ProductManegerComponent implements OnInit {
   product: Product;
   button: boolean = true;
 
+  page=1;
+  pageSize = 12;
 
 
   // xem(pr): void {

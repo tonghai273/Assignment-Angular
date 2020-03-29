@@ -13,8 +13,8 @@
     <th>DELETE</th>
   </tr>
   </thead>
-  <tbody *ngFor="let product of pro">
-  <tr>
+  <tbody>
+  <tr *ngFor="let product of pro | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
     <!--    <td>{{i + 1}}</td>-->
     <td>{{product.id}}</td>
     <td>{{product.name}}</td>
@@ -30,9 +30,13 @@
       <button (click)="deleteProduct(product.id)" type="button" class="btn btn-danger ml-3">Delete</button>
     </td>
   </tr>
-
   </tbody>
 </table>
+<ngb-pagination
+  [(page)]="page"
+  [pageSize]="pageSize"
+  [collectionSize]="pro.length">
+  </ngb-pagination>
 
 <form *ngIf="prodetail" action="" method="post" role="form">
   <legend>ID : {{prodetail.id}}</legend>

@@ -393,7 +393,7 @@
             </div>
             <div class="row">
               <!-- /womens -->
-              <div class="col-md-3 product-men women_two shop-gd" *ngFor="let product of pro">
+              <div class="col-md-3 product-men women_two shop-gd" *ngFor="let product of pro | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
                 <div class="product-googles-info googles">
                   <div class="men-pro-item">
                     <div class="men-thumb-item">
@@ -463,7 +463,11 @@
                   </div>
                 </div>
               </div>
-
+<ngb-pagination
+  [(page)]="page"
+  [pageSize]="pageSize"
+  [collectionSize]="pro.length">
+  </ngb-pagination>
             </div>
           </div>
         </div>

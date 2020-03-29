@@ -15,6 +15,8 @@ export class IndexComponent implements OnInit {
   }
 
   pro: Product[];
+  page=1;
+  pageSize = 12;
 
   ngOnInit(): void {
     this.getProducts();
