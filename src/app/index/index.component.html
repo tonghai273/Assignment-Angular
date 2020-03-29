@@ -256,7 +256,7 @@
       <div class="row">
         <!-- /womens -->
         <div class="col-md-3 product-men women_two" >
-          <div class="product-googles-info googles" >
+          <div class="product-googles-info googles" *ngFor="let product of pro | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
             <div class="men-pro-item" >
               <div class="men-thumb-item">
 <!--                <img src="/assets/images/s1.jpg" class="img-fluid" alt="">-->
