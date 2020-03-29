@@ -15,6 +15,7 @@ import { ProductDetialComponent } from "./product-detial/product-detial.componen
 import { ProductEditComponent } from "./product-edit/product-edit.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { IndexAdminComponent } from "./index-admin/index-admin.component";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
   declarations: [
@@ -27,14 +28,15 @@ import { IndexAdminComponent } from "./index-admin/index-admin.component";
     ProductDetialComponent,
     ProductEditComponent,
     NotFoundComponent,
-    IndexAdminComponent,
+    IndexAdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

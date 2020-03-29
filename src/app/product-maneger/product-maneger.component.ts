@@ -1,12 +1,12 @@
-import {Component, OnInit} from '@angular/core';
-import {Product} from '../Product';
-import {ProductServiceService} from '../product-service.service';
-import {Router} from '@angular/router';
+import { Component, OnInit } from "@angular/core";
+import { Product } from "../Product";
+import { ProductServiceService } from "../product-service.service";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-product-maneger',
-  templateUrl: './product-maneger.component.html',
-  styleUrls: ['./product-maneger.component.css']
+  selector: "app-product-maneger",
+  templateUrl: "./product-maneger.component.html",
+  styleUrls: ["./product-maneger.component.css"]
 })
 export class ProductManegerComponent implements OnInit {
   // data = ListProduct;
@@ -17,10 +17,13 @@ export class ProductManegerComponent implements OnInit {
   //     return value !== pro;
   //   });
   // }
+
   pro: Product[];
   prodetail: Product;
   product: Product;
   button: boolean = true;
+
+
 
   // xem(pr): void {
   //   this.prodetail = pr;
@@ -31,9 +34,10 @@ export class ProductManegerComponent implements OnInit {
   //   this.prodetail = null;
   // }
 
-  constructor(private productServiceService: ProductServiceService,
-              private router: Router) {
-  }
+  constructor(
+    private productServiceService: ProductServiceService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.getProducts();
@@ -60,12 +64,10 @@ export class ProductManegerComponent implements OnInit {
       // this.router.navigateByUrl('/admin');
       this.getProducts();
     });
-
   }
 
   // addProduct() {
   //   this.p.id = this.pro.length + 1;
   //   this.productServiceService.addProduct(this.p);
   // }
-
 }
